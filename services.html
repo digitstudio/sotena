@@ -53,16 +53,30 @@
       height: 100%;
       object-fit: cover; 
     }
+
+    .filter-button {
+      background-color: #12466e; /* Couleur par défaut des boutons */
+      color: #fff; /* Couleur du texte */
+      font-size: 15px; /* Taille du texte plus petite */
+      padding: 5px 10px; /* Diminution du padding */
+    }
+    
+    .filter-button.btn-dark {
+      background-color: #343a40; /* Couleur spécifique pour le bouton "Expertise" */
+    }
+    
+    .filter-button.btn-secondary {
+      background-color: #12466e; /* Couleur secondaire des autres boutons */
+    }
+    
+    .filter-button:hover {
+      background-color: #5a6268; /* Changement de couleur au survol */
+      color: #fff; /* Couleur du texte au survol */
+    }
+    
     
   </style>
 
-  <!-- =======================================================
-  * Template Name: Moderna
-  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="services-page">
@@ -80,9 +94,9 @@
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="about.html">A propos</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="services.html" class="active">Produits & Services</a></li>
           <li><a href="portfolio.html">Nos Réalisations</a></li>
-          <!--<li><a href="team.html">Equipes</a></li>-->
+          <li><a href="team.html">Nos Certifications</a></li>
           <!--<li><a href="blog.html">Blog</a></li> -->
           <!--<li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -126,191 +140,316 @@
     </div><!-- End Page Title -->
 
     
-    <!--<section id="featured-services" class="featured-services section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Installation d'appareils et produits de marques UE</h3>
-              </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Eosle Commodi</h3>
-              </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Ledo Markt</h3>
-              </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
-              </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="service-details.html" class="stretched-link"></a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section>-->
-
-      <!-- Services Section -->
+    <!-- Services Section -->
     <section id="services" class="services section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <button class="btn btn-dark filter-button mx-2 mb-2" data-filter="expertise">Expertise, Etude et Analyse controle qualité</button>
+            <button class="btn btn-secondary filter-button mx-2 mb-2" data-filter="traitement-physico">Traitement paramètres physico-chimiques</button>
+            <button class="btn btn-secondary filter-button mx-2 mb-2" data-filter="traitement-bacterio">Traitement paramètres bactériologiques</button>
+            <button class="btn btn-secondary filter-button mx-2 mb-2" data-filter="forage">Forage Adduction et Hydrogéologie</button>
+            <button class="btn btn-secondary filter-button mx-2 mb-2" data-filter="assainissement">Assainissements et Hygienes</button>
+            <button class="btn btn-secondary filter-button mx-2 mb-2" data-filter="solutions">Solutions Innovantes et Gestion Économique</button>
+          </div>
+        </div>
 
         <div class="row gy-4">
-
-          <div class="col-lg-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <!-- Expertise, Étude et Analyse Contrôle Qualité -->
+          <div class="col-12 text-center service-item"  data-category="expertise">   
+            <h5 class="fw-bold">Nous offrons des services spécialisés en expertise, étude et analyse pour garantir des contrôles qualité rigoureux et précis, <br> adaptés à vos besoins professionnels.</h5>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="expertise" style="display: none;">
             <div class="card border-0 shadow-sm h-100">
               <div class="card-img-container">
-                <img src="assets/img/serv1.jpg" class="card-img-top" alt="Installation appareils et produits de marques Union Européennes">
+                <img src="assets/img/Services/Image1.jpg" class="card-img-top" alt="Expertise et Analyse">
               </div>
-              <div class="card-body">
-                <h3 class="card-title fw-bold">Installation appareils et produits de marques Union Européennes</h3>
-                <p class="card-text">Nous fournissons et installons des équipements de mesure et méthodes d’analyses et nous livrons à échelle mondiale les fondements nécessaires depuis plus de 10 ans.</p>
-              </div>
+              <!-- <div class="card-body">
+                <h3 class="card-title fw-bold">Expertise et Analyse</h3>
+                <p class="card-text">Nous fournissons des services d'expertise, d'étude et d'analyse pour le contrôle qualité, garantissant des résultats précis et fiables.</p>
+              </div>-->
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="expertise" style="display: none;">
             <div class="card border-0 shadow-sm h-100">
               <div class="card-img-container">
-                <img src="assets/img/serv2.jpg" class="card-img-top" alt="Matériels d'Analyse de qualité">
+                <img src="assets/img/Services/Image2.jpg" class="card-img-top" alt="Expertise et Analyse">
               </div>
-              <div class="card-body">
-                <h3 class="card-title fw-bold">Matériels d'Analyse de qualité</h3>
-                <p class="card-text">SOTENA-TOGO offre des applications de mesure en continu sur site industriel ou bien en Off-line avec des solutions d’échantillons, nos instruments de mesure aident à éviter la formation de la corrosion et l’entartrage des installations industrielles.</p>
-              </div>
+              <!-- <div class="card-body">
+                <h3 class="card-title fw-bold">Expertise et Analyse</h3>
+                <p class="card-text">Nous fournissons des services d'expertise, d'étude et d'analyse pour le contrôle qualité, garantissant des résultats précis et fiables.</p>
+              </div>-->
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="expertise" style="display: none;">
             <div class="card border-0 shadow-sm h-100">
               <div class="card-img-container">
-                <img src="assets/img/serv3.jpg" class="card-img-top" alt="Suivi d’un service après-vente / Représentation">
+                <img src="assets/img/Services/Image3.jpg" class="card-img-top" alt="Expertise et Analyse">
               </div>
-              <div class="card-body">
-                <h3 class="card-title fw-bold">Suivi d’un service après-vente/Représentation</h3>
-                <p class="card-text">Nous assurons un suivi rigoureux de votre service après-vente pour garantir votre satisfaction totale. Notre équipe est dédiée à représenter vos intérêts, résoudre rapidement les problèmes et vous offrir une assistance personnalisée tout au long de votre expérience avec nous.</p>
-              </div>
+              <!-- <div class="card-body">
+                <h3 class="card-title fw-bold">Expertise et Analyse</h3>
+                <p class="card-text">Nous fournissons des services d'expertise, d'étude et d'analyse pour le contrôle qualité, garantissant des résultats précis et fiables.</p>
+              </div>-->
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6 mb-4" data-aos="zoom-in" data-aos-delay="500">
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="expertise" style="display: none;">
             <div class="card border-0 shadow-sm h-100">
               <div class="card-img-container">
-                <img src="assets/img/serv4.jpg" class="card-img-top" alt="Assainissements et Hygiènes">
+                <img src="assets/img/Services/Image4.png" class="card-img-top" alt="Expertise et Analyse">
               </div>
-              <div class="card-body">
-                <h3 class="card-title fw-bold">Assainissements et Hygiènes</h3>
-                <p class="card-text">Nous proposons des solutions complètes pour l’assainissement et l’hygiène, incluant le traitement des eaux usées. Grâce à nos méthodes innovantes, nous aidons nos clients à maintenir des standards élevés de propreté et de sécurité dans divers contextes. Nos services contribuent à créer un cadre sain et agréable pour tous.</p>
-              </div>
+              <!-- <div class="card-body">
+                <h3 class="card-title fw-bold">Expertise et Analyse</h3>
+                <p class="card-text">Nous fournissons des services d'expertise, d'étude et d'analyse pour le contrôle qualité, garantissant des résultats précis et fiables.</p>
+              </div>-->
             </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-
-    <!-- Pricing Section 
-    <section id="pricing" class="pricing section">
-
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="expertise" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image5.jpg" class="card-img-top" alt="Expertise et Analyse">
+              </div>
+              <!-- <div class="card-body">
+                <h3 class="card-title fw-bold">Expertise et Analyse</h3>
+                <p class="card-text">Nous fournissons des services d'expertise, d'étude et d'analyse pour le contrôle qualité, garantissant des résultats précis et fiables.</p>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="expertise" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image6.png" class="card-img-top" alt="Expertise et Analyse">
+              </div>
+              <!-- <div class="card-body">
+                <h3 class="card-title fw-bold">Expertise et Analyse</h3>
+                <p class="card-text">Nous fournissons des services d'expertise, d'étude et d'analyse pour le contrôle qualité, garantissant des résultats précis et fiables.</p>
+              </div>-->
+            </div>
+          </div>
       
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div>
 
-      <div class="container">
-
-        <div class="row g-4 g-lg-0">
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Free Plan</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+          <!-- Traitement paramètres physico-chimiques -->
+          <div class="col-12 text-center service-item" data-category="traitement-physico" >   
+            <h5 class="fw-bold">Nous réalisons des analyses approfondies des paramètres physico-chimiques pour garantir la qualité et la conformité de l'eau. <br>
+              Nos traitements permettent d'améliorer les caractéristiques chimiques,physiques et esthétiques,  <br> assurant ainsi une eau saine et sécurisée.</h5>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="traitement-physico" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image7.png" class="card-img-top" alt="Traitement physico-chimique">
+              </div>
+               <!--<div class="card-body">
+                <h3 class="card-title fw-bold">Traitement physico-chimique</h3>
+                <p class="card-text">Nos solutions de traitement des paramètres physico-chimiques assurent la qualité et la conformité de vos processus industriels.</p>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="traitement-physico" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image8.png" class="card-img-top" alt="Traitement physico-chimique">
+              </div>
+               <!--<div class="card-body">
+                <h3 class="card-title fw-bold">Traitement physico-chimique</h3>
+                <p class="card-text">Nos solutions de traitement des paramètres physico-chimiques assurent la qualité et la conformité de vos processus industriels.</p>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="traitement-physico" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image9.png" class="card-img-top" alt="Traitement physico-chimique">
+              </div>
+               <!--<div class="card-body">
+                <h3 class="card-title fw-bold">Traitement physico-chimique</h3>
+                <p class="card-text">Nos solutions de traitement des paramètres physico-chimiques assurent la qualité et la conformité de vos processus industriels.</p>
+              </div>-->
+            </div>
+          </div>
+        
+        
+          <!-- Traitement paramètres bactériologiques -->
+          <div class="col-12 text-center service-item" data-category="traitement-bacterio" >   
+            <h5 class="fw-bold">Nos services incluent des tests bactériologiques rigoureux afin de détecter et éliminer les agents pathogènes dans l'eau. <br>
+              Nous assurons un traitement efficace pour prévenir toute contamination microbiologique, <br>respectant les normes sanitaires en vigueur.</h5>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="traitement-bacterio" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image10.png" class="card-img-top" alt="Traitement bactériologique">
+              </div>
+              <!--<div class="card-body">
+                <h3 class="card-title fw-bold">Traitement bactériologique</h3>
+                <p class="card-text">Nos méthodes de traitement des paramètres bactériologiques garantissent la sécurité et la qualité de vos produits et environnements.</p>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="traitement-bacterio" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image11.jpg" class="card-img-top" alt="Traitement bactériologique">
+              </div>
+              <!--<div class="card-body">
+                <h3 class="card-title fw-bold">Traitement bactériologique</h3>
+                <p class="card-text">Nos méthodes de traitement des paramètres bactériologiques garantissent la sécurité et la qualité de vos produits et environnements.</p>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="traitement-bacterio" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image12.jpg" class="card-img-top" alt="Traitement bactériologique">
+              </div>
+              <!--<div class="card-body">
+                <h3 class="card-title fw-bold">Traitement bactériologique</h3>
+                <p class="card-text">Nos méthodes de traitement des paramètres bactériologiques garantissent la sécurité et la qualité de vos produits et environnements.</p>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="traitement-bacterio" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image13.jpg" class="card-img-top" alt="Traitement bactériologique">
+              </div>
+              <!--<div class="card-body">
+                <h3 class="card-title fw-bold">Traitement bactériologique</h3>
+                <p class="card-text">Nos méthodes de traitement des paramètres bactériologiques garantissent la sécurité et la qualité de vos produits et environnements.</p>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="traitement-bacterio" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image14.jpg" class="card-img-top" alt="Traitement bactériologique">
+              </div>
+              <!--<div class="card-body">
+                <h3 class="card-title fw-bold">Traitement bactériologique</h3>
+                <p class="card-text">Nos méthodes de traitement des paramètres bactériologiques garantissent la sécurité et la qualité de vos produits et environnements.</p>
+              </div>-->
+            </div>
+          </div>
+        
+          <!-- Forage Adduction et Hydrogéologie -->
+          <div class="col-12 text-center service-item" data-category="forage" >   
+            <h5 class="fw-bold">Nous offrons des services professionnels de forage, d'adduction d'eau et d'études hydrogéologiques pour évaluer les ressources en eau souterraine. 
+               Nos solutions garantissent un accès durable et sécurisé à l'eau, <br>adapté aux besoins de votre projet.</h5>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="forage" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image15.jpg" class="card-img-top" alt="Forage et Hydrogéologie">
+              </div>
+              <!-- <div class="card-body">
+                <h3 class="card-title fw-bold">Forage et Hydrogéologie</h3>
+                <p class="card-text">Nos services de forage, d'adduction d'eau et d'études hydrogéologiques répondent à vos besoins en gestion des ressources hydriques.</p>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="forage" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image16.jpg" class="card-img-top" alt="Forage et Hydrogéologie">
+              </div>
+              <!-- <div class="card-body">
+                <h3 class="card-title fw-bold">Forage et Hydrogéologie</h3>
+                <p class="card-text">Nos services de forage, d'adduction d'eau et d'études hydrogéologiques répondent à vos besoins en gestion des ressources hydriques.</p>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="forage" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image17.jpg" class="card-img-top" alt="Forage et Hydrogéologie">
+              </div>
+              <!-- <div class="card-body">
+                <h3 class="card-title fw-bold">Forage et Hydrogéologie</h3>
+                <p class="card-text">Nos services de forage, d'adduction d'eau et d'études hydrogéologiques répondent à vos besoins en gestion des ressources hydriques.</p>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="forage" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image18.jpg" class="card-img-top" alt="Forage et Hydrogéologie">
+              </div>
+              <!-- <div class="card-body">
+                <h3 class="card-title fw-bold">Forage et Hydrogéologie</h3>
+                <p class="card-text">Nos services de forage, d'adduction d'eau et d'études hydrogéologiques répondent à vos besoins en gestion des ressources hydriques.</p>
+              </div>-->
             </div>
           </div>
 
-          <div class="col-lg-4 featured" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pricing-item">
-              <h3>Business Plan</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+          <!-- Assainissements et Hygienes -->
+          <div class="col-12 text-center service-item" data-category="assainissement" >   
+            <h5 class="fw-bold">Nos solutions d'assainissement sont conçues pour améliorer la gestion des eaux usées et garantir un environnement propre et sain. <br>
+              Nous proposons des systèmes innovants et durables pour l'assainissement, <br>répondant aux enjeux environnementaux et sanitaires.</h5>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="assainissement" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image19.jpg" class="card-img-top" alt="Assainissement et Hygiène">
+              </div>
+              <!--<div class="card-body">
+                <h3 class="card-title fw-bold">Assainissement et Hygiène</h3>
+                <p class="card-text">Nous proposons des solutions complètes pour l'assainissement et l'hygiène, incluant le traitement des eaux usées et la maintenance des installations sanitaires.</p>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="assainissement" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image20.jpg" class="card-img-top" alt="Assainissement et Hygiène">
+              </div>
+              <!--<div class="card-body">
+                <h3 class="card-title fw-bold">Assainissement et Hygiène</h3>
+                <p class="card-text">Nous proposons des solutions complètes pour l'assainissement et l'hygiène, incluant le traitement des eaux usées et la maintenance des installations sanitaires.</p>
+              </div>-->
             </div>
           </div>
 
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Developer Plan</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+          <!-- Solutions Innovantes et Gestion Économique -->
+          <div class="col-12 text-center service-item" data-category="solutions" >   
+            <h5 class="fw-bold">Nous développons des solutions innovantes pour optimiser la gestion de l'eau et des ressources naturelles. <br>
+              Nos stratégies de gestion économique permettent de réduire les coûts tout en augmentant l'efficacité, <br>assurant une gestion durable et rentable des ressources.</h5>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="solutions" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image21.png" class="card-img-top" alt="Solutions Innovantes">
+              </div>
+              <!--<div class="card-body">
+                <h3 class="card-title fw-bold">Solutions Innovantes</h3>
+                <p class="card-text">Nos approches innovantes et solutions économiques pour la gestion de l'eau et de l'environnement optimisent vos ressources et réduisent vos coûts.</p>
+              </div>-->
             </div>
           </div>
-
+          <div class="col-lg-4 col-md-6 service-item" data-category="solutions" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image22.png" class="card-img-top" alt="Solutions Innovantes">
+              </div>
+              <!--<div class="card-body">
+                <h3 class="card-title fw-bold">Solutions Innovantes</h3>
+                <p class="card-text">Nos approches innovantes et solutions économiques pour la gestion de l'eau et de l'environnement optimisent vos ressources et réduisent vos coûts.</p>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item" data-category="solutions" style="display: none;">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-img-container">
+                <img src="assets/img/Services/Image23.png" class="card-img-top" alt="Solutions Innovantes">
+              </div>
+              <!--<div class="card-body">
+                <h3 class="card-title fw-bold">Solutions Innovantes</h3>
+                <p class="card-text">Nos approches innovantes et solutions économiques pour la gestion de l'eau et de l'environnement optimisent vos ressources et réduisent vos coûts.</p>
+              </div>-->
+            </div>
+          </div>
+        
+          <!-- Autres catégories continuent -->
         </div>
-
+        
       </div>
-
-    </section> -->
+    </section>
 
   </main>
 
@@ -401,6 +540,43 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-button');
+      const serviceItems = document.querySelectorAll('.service-item');
+    
+      function filterServices(filter) {
+        serviceItems.forEach(item => {
+          if (item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+    
+        filterButtons.forEach(btn => {
+          if (btn.getAttribute('data-filter') === filter) {
+            btn.classList.remove('btn-secondary');
+            btn.classList.add('btn-dark');
+          } else {
+            btn.classList.remove('btn-dark');
+            btn.classList.add('btn-secondary');
+          }
+        });
+      }
+    
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const filter = this.getAttribute('data-filter');
+          filterServices(filter);
+        });
+      });
+    
+      // Activer le filtre "expertise" par défaut
+      filterServices('expertise');
+    });
+    </script>
 
 </body>
 

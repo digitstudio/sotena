@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>SOTENA / Certifications</title>
+  <title>SOTENA / Détail Réalisations</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -15,7 +15,6 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -29,25 +28,19 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
-    .member-img img {
-      border: 1px #000000; /* Définit la couleur et l'épaisseur du contour */
-      border-radius: 10px;       /* Arrondit légèrement les coins */
-      padding: 5px;              /* Ajoute de l'espace entre l'image et le contour */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre douce */
-      transition: transform 0.3s ease-in-out;   /* Crée un effet de zoom au survol */
-    }
-    
-    .member-img img:hover {
-      transform: scale(1.05);    /* Agrandit légèrement l'image au survol */
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Accentue l'ombre au survol */
-    }
-
+    .swiper-slide img {
+        width: 100%;  /* Ajuste la largeur de l'image pour s'adapter à son conteneur */
+        height: 600px;  /* Définit une hauteur fixe pour toutes les images */
+        object-fit: cover;  /* Garde les proportions de l'image tout en remplissant le conteneur */
+        border-radius: 10px;  /* Optionnel : arrondi les bords des images */
+      }
+      
   </style>
-  
-  
+
+
 </head>
 
-<body class="team-page">
+<body class="portfolio-details-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: #f7f0f0;">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -63,8 +56,8 @@
           <li><a href="index.html">Accueil</a></li>
           <li><a href="about.html">A propos</a></li>
           <li><a href="services.html" >Produits & Services</a></li>
-          <li><a href="portfolio.html">Nos Réalisations</a></li>
-          <li><a href="team.html"  class="active">Nos Certifications</a></li>
+          <li><a href="portfolio.html" class="active">Nos Réalisations</a></li>
+          <li><a href="team.html">Nos Certifications</a></li>
           <!--<li><a href="blog.html">Blog</a></li>-->
           <!--<li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -90,151 +83,103 @@
 
     </div>
   </header>
+
   <main class="main">
 
     <!-- Page Title -->
+ >
     <div class="page-title dark-background">
       <div class="container position-relative">
-        <h1>Attestations</h1>
-        <p>Découvrez les certifications et attestations officielles qui témoignent de notre engagement à fournir <br>des services de traitement d'eau conformes aux normes 
-          de qualité les plus strictes.</p>
+        <h1>Nos Réalisations</h1>
+        <p>Découvrez notre portfolio, témoin de notre expertise et de notre engagement <br>à fournir des solutions innovantes et de qualité supérieure pour tous vos projets.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Accueil</a></li>
-            <li class="current">Certifications & Attestations</li>
+            <li class="current">Nos Réalisations</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
-    <!-- Team Section -->
-    <section id="team" class="team section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="container">
+        <div class="row gy-4">
 
-        <div class="row gy-5">
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
 
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <a href="assets/img/team/ASECNA.jpg" class="image-popup">
-                <img src="assets/img/team/ASECNA.jpg" class="img-fluid" alt="">
-              </a>   
-              
-            </div>            
-          </div><!-- End Team Member -->
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
 
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-img">
-              <a href="assets/img/team/CAMEG.jpg" class="image-popup">
-                <img src="assets/img/team/CAMEG.jpg" class="img-fluid" alt="">
-              </a>           
-            </div>
-          </div><!-- End Team Member -->
+              <div class="swiper-wrapper align-items-center">
 
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-img">
-              <a href="assets/img/team/CAPTOGOOILS.jpg" class="image-popup">
-                <img src="assets/img/team/CAPTOGOOILS.jpg" class="img-fluid" alt="">
-              </a>
-            </div>
-          </div><!-- End Team Member -->
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/ceb2.jpg" alt="">
+                </div>
 
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-            <div class="member-img">
-               <a href="assets/img/team/CAP.jpg" class="image-popup">
-                  <img src="assets/img/team/CAP.jpg" class="img-fluid" alt="">
-               </a>
-            </div>
-         </div>
-         
-         <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
-            <div class="member-img">
-               <a href="assets/img/team/CEB.jpg" class="image-popup">
-                  <img src="assets/img/team/CEB.jpg" class="img-fluid" alt="">
-               </a>
-            </div>
-         </div>
-         
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/ceb1.jpg" alt="">
+                </div>
 
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
-            <div class="member-img">
-              <a href="assets/img/team/CHU-SOHomodialyse.jpg" class="image-popup">
-                <img src="assets/img/team/CHU-SOHomodialyse.jpg" class="img-fluid" alt="">
-             </a>
-              
-            </div>
-          </div><!-- End Team Member -->
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/ceb3.jpg" alt="">
+                </div>
 
-          <!-- <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600" >
-            <div class="member-img">
-              <a href="assets/img/team/DS N°5.jpg" class="image-popup">
-                <img src="assets/img/team/DS N°5.jpg" class="img-fluid" alt="">
-             </a>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/ceb4.jpg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
-            <div class="member-img">
-              <a href="assets/img/team/CHU TOKOIN.jpg" class="image-popup">
-                <img src="assets/img/team/CHU TOKOIN.jpg" class="img-fluid" alt="">
-             </a>
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Informations du projet</h3>
+              <ul>
+                <li><strong>Catégorie</strong>: Traitement de l'eau</li>
+                <li><strong>Client</strong>: Communauté Économique du Bénin (CEB)</li>
+                <li><strong>Date du projet</strong>: 05 Avril, 2021</li>
+                <li><strong>URL du projet</strong>: <a href="#">www.smartdigit.com/ceb-projet</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Étude et Réalisation des équipements de traitement de l'eau pour la CEB-LOMÉ</h2>
+              <p>
+                Ce projet comprenait l'étude et la mise en place d'équipements de traitement de l'eau pour la Communauté Économique du Bénin (CEB) à Lomé. 
+                Notre équipe a conçu un système de purification de l'eau sur mesure afin de répondre aux besoins spécifiques de la CEB, garantissant une eau propre et potable. 
+                Le projet visait à améliorer l'accès à une eau de qualité pour les activités de la communauté en conformité avec les normes internationales.
+              </p>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
-            <div class="member-img">
-              <a href="assets/img/team/EGLISE CDE.jpg" class="image-popup">
-                <img src="assets/img/team/EGLISE CDE.jpg" class="img-fluid" alt="">
-             </a>
-            </div>
-          </div> -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
-            <div class="member-img">
-              <a href="assets/img/team/cert1.jpg" class="image-popup">
-                <img src="assets/img/team/cert1.jpg" class="img-fluid" alt="">
-             </a>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
-            <div class="member-img">
-              <a href="assets/img/team/cert2.jpg" class="image-popup">
-                <img src="assets/img/team/cert2.jpg" class="img-fluid" alt="">
-             </a>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
-            <div class="member-img">
-              <a href="assets/img/team/cert5.jpg" class="image-popup">
-                <img src="assets/img/team/cert5.jpg" class="img-fluid" alt="">
-             </a>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
-            <div class="member-img">
-              <a href="assets/img/team/cert4.jpg" class="image-popup">
-                <img src="assets/img/team/cert4.jpg" class="img-fluid" alt="">
-             </a>
-            </div>
-          </div><!-- End Team Member -->
-
-
-
-
-
-        </div>
+          
+          
 
       </div>
 
-    </section><!-- /Team Section -->
+    </section><!-- /Portfolio Details Section -->
 
   </main>
 
   <footer id="footer" class="footer dark-background">
+
 
     <div class="container footer-top">
       <div class="row gy-4">
@@ -317,27 +262,9 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script>
-    $(document).ready(function() {
-      $('.image-popup').magnificPopup({
-        type: 'image',
-        gallery: {
-          enabled: true // Active la galerie si tu as plusieurs images
-        },
-        zoom: {
-          enabled: true, // Active le zoom au survol de l'image
-          duration: 300 // Durée de l'animation en millisecondes
-        }
-      });
-    });
-  </script>
-  
 
 </body>
 
